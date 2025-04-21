@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8085
 
 eureka:
   client:
@@ -19,17 +19,10 @@ spring:
       routes:
 
 
-        - id: mycj-cliente-service
-          uri: lb://mycj-cliente-service
-          predicates:
-            - Path=/clientes/**
 
 
 
 
 
-        - id: mycj-registry-service
-          uri: lb://mycj-registry-service
-          predicates:
-            - Path=/registry/**
+
 
