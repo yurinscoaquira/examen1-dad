@@ -21,6 +21,10 @@ spring:
           uri: lb://mycj-student-service
           predicates:
               - Path=/estudiantes/**
+        - id: lmhp-estudiante-service
+          uri: lb://lmhp-estudiante-service
+          predicates:
+            - Path=/estudiantes/**
 
 
 
