@@ -25,6 +25,11 @@ spring:
           uri: lb://lmhp-estudiante-service
           predicates:
             - Path=/estudiantes/**
+        - id: rdcm-curso-service
+          uri: lb://rdcm-curso-service
+          predicates:
+            - Path=/cursos/**
+
 
 
 
