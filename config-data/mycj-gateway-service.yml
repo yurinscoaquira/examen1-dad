@@ -17,6 +17,10 @@ spring:
         locator:
           enable: true
       routes:
+        - id: mycj-student-service
+          uri: lb://mycj-student-service
+          predicates:
+              - Path=/estudiantes/**
 
 
 
