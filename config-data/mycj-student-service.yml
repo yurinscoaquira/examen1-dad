@@ -1,18 +1,18 @@
 server:
+
   port: 8081
 spring:
-  application:
-    name: mycj-student-service
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-
   datasource:
-    url: jdbc:mysql://localhost:3306/ms_estudiente
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:h2:mem:mycj-student-service
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
 
 springdoc:
   api-docs:
