@@ -29,7 +29,6 @@ spring:
           uri: lb://rdcm-curso-service
           predicates:
             - Path=/cursos/**
-
         - id: dmb-matricula-service
           uri: lb://dmb-matricula-service
           predicates:
