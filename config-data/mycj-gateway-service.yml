@@ -32,7 +32,7 @@ spring:
         - id: dmb-matricula-service
           uri: lb://dmb-matricula-service
           predicates:
-            - Path=/matricula/**
+            - Path=/matriculas/**
 
 
 

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/matricula")
+@RequestMapping("/matriculas")
 public class MatriculaController {
     @Autowired
     private MatriculaService matriculaService;
