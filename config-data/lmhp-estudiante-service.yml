@@ -2,17 +2,18 @@ server:
 
   port: 8082
 spring:
-  datasource:
-    url: jdbc:h2:mem:lmhp-estudiante-service
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: password
+  application:
+    name: lmhp-estudiante-service
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/lmhp_estudiantes
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 springdoc:
   api-docs:

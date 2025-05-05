@@ -79,15 +79,5 @@ public class Curso {
         this.ciclo = ciclo;
     }
 
-    @Override
-    public String toString() {
-        return "Curso{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", horario='" + horario + '\'' +
-                ", capacidad=" + capacidad +
-                ", codigo='" + codigo + '\'' +
-                ", ciclo=" + ciclo +
-                '}';
-    }
+
 }

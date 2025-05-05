@@ -1,18 +1,19 @@
 server:
 
-  port: 8083
+  port: 8084
 spring:
-  datasource:
-    url: jdbc:h2:mem:rdcm-curso-service
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: password
+  application:
+    name: rdcm-curso-service
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/rdcm_asignaturas
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 springdoc:
   api-docs:

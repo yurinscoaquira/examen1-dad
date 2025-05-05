@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "dmb-student-service", path = "/estudiantes")
+@FeignClient(name = "lmhp-estudiante-service", path = "/estudiantes")
 public interface EstudianteFeing {
         @GetMapping("/{id}")
         ResponseEntity<Estudiante> obtenerPorId (@PathVariable Integer id);
