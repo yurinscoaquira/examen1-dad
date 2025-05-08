@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/danielccanayucra/DAD-2025-I.git # ruta del repositorio git
+          uri: https://github.com/yurinscoaquira/examen1-dad.git # ruta del repositorio git
           searchPaths: config-data
           default-label: main
   security:
